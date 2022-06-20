@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    --color-principal: #062f5b;
+    --color-secundario: #679dd6;
+    --color-texto: #5d596b;
+}
+
+header {
+    background-color: var(--color-principal);   
+}
+
+.navBarTop {
+    margin-left: 15px;
+}
+
+.navBarTop ul {
+    display: flex;
+    list-style: none;
+}
+
+.navBarTop li {
+    margin: 20px 10px;
+}
+
+.navBarTop a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.2;
+}
+
+h1 {
+    font-size:40px;
+    text-align: center;
+    margin: 40px 0px 25px
+}
+
+.cajaDeCajas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cajaPais {
+    width:90%;
+    min-width: 360px;
+    margin: 5px 10px 60px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px #ccc;
+}
+
+.argentina{    
+    background: url(/img/argentinaCard.webp);
+    background-position: center;
+} 
+
+.mexico{    
+    background: url(/img/mexicoCard.webp);
+    background-position: center;
+} 
+
+.colombia{    
+    background-image: url(/img/colombiaCard.webp);
+    background-position: center;
+} 
+
+.cajaPais h3 {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 25px 0px 20px;
+}
+
+.cajaPais p {
+    text-align: justify;
+    font-size: 20px;    
+    margin-top: 10px;
+}
+
+.fotoPais {
+    width:100%;
+    border-radius: 5px;
+}
+
+.fotomexico {
+    max-width: 534px;
+    max-height: 300px;
+}
+
+h4 {
+    font-size: 36px;
+    text-align: center;
+    margin: 40px 0px 25px;
+}
+
+.contactoBar div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formBot {
+    background-color: var(--color-principal);
+    width: 80%;
+    min-width: 300px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly
+}
+
+.formBot label {
+    color: #ffffff;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.formBot input {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 90%;
+    height: 28px;
+    font-size: 16px;
+}
+
+.formBot fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;    
+    margin-left: 10%;
+}
+
+.botonContacto {
+    width: 81%;        
+    margin-left: 10%;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+    background-color: var(--color-principal);
+    color: #ffffff;
+    height:28px;
+    font-size: 16px;    
+    transition: all 0.1s;
+}
+
+.botonContacto:hover {
+    background-color: rgb(19, 97, 221);
+}
+
+.datosContacto {
+    width: 80%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    text-align:center;
+    margin: 15px auto;
+}
+
+footer {
+    background-color: var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    height: 150px
+}
+
+.navBarBot {
+    margin-left: 15px;
+}
+
+.navBarBot ul {
+    list-style: none;
+}
+
+.navBarBot li {
+    margin: 20px 10px;
+}
+
+.navBarBot a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.formFooter {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.formFooter label {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.formFooter fieldset {
+    border: none;
+    width: 80%;
+    margin: auto;
+}
+
+.formFooter input {
+    border: 2px solid #ffffff;    
+    width: 70%;
+    height: 28px;
+    font-size: 16px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius:  25px;
+}
+
+.formFooter button {
+    width: 20%;
+    min-width: 50px;
+    border: 2px solid #ffffff;
+    background-color: var(--color-principal);
+    color: #ffffff;
+    height:28px;
+    font-size: 16px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius:  25px;
+    transition: all 0.1s;
+}
+
+.formFooter button:hover {
+    background-color: rgb(19, 97, 221);
+}
+
+a {    
+    transition: all 0.2;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {  /*TABLET*/ 
+    .formBot {
+        width: 50%;
+        min-width: 400px;
+    }
+    
+    .datosContacto {
+        width: 50%;
+        min-width: 400px;
+    }
+}
+
+@media (min-width: 1200px) {  /*ESCRITORIO*/
+    .cajaPais {
+        width:30%;
+    }
+    
+    .form-Datos {
+        padding: 40px
+    }
+
+    .contactoBar {
+        padding: 20px
+    }
+}
+

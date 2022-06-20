@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Latam</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/carrusel.css">
+</head>
+<body>
+    <header>
+        <nav class="navBarTop">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="imgCarrusel" src="img/bannerBrasil.png" style="width:100%">
+                <div class="textTitle">Visita Latinoamerica</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img class="imgCarrusel" src="img/bg-header.jpeg" style="width:100%">
+                <div class="textTitle">Visita Latinoamerica</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img class="imgCarrusel" src="img/bannerColombia.jpg" style="width:100%">
+                <div class="textTitle">Visita Latinoamerica</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </header>
+    <main>
+        <h1>Lugares para visitar</h1>
+        <div class="cajaDeCajas">
+        <section class="cajaPais colombia">
+            <h3 class="nombrePais">Colombia</h3>
+            <picture>
+                <img class="fotoPais" src="img/colombia.jpeg" atl="foto">
+            </picture>
+            <p class="textoPais">Colombia es un país del extremo norte de Sudamérica. Su paisaje cuenta con bosques tropicales, las montañas de los Andes y varias plantaciones de café. En Bogotá, su capital a gran altura, el distrito Zona Rosa es famoso por sus restaurantes y tiendas. Cartagena, en la costa del Caribe, tiene una Ciudad Antigua colonial amurallada, un castillo del siglo XVI y arrecifes de coral cercanos.</p>
+        </section>
+        <section class="cajaPais argentina">
+            <h3 class="nombrePais">Argentina</h3>
+            <picture>
+                <img class="fotoPais" src="img/argentina.jpeg" atl="foto">
+            </picture>
+            <p class="textoPais">Argentina es un país sudamericano de gran envergadura con un terreno que incluye las montañas de los Andes, lagos glaciales y praderas en las Pampas, la tierra tradicional de pastoreo de su famoso ganado. El país es conocido por el baile y la música del tango. Su gran capital cosmopolita, Buenos Aires, se centra en la Plaza de Mayo, rodeada por imponentes edificios del siglo XIX, como la Casa Rosada, el icónico palacio presidencial.</p>
+        </section>
+        <section class="cajaPais mexico">
+            <h3 class="nombrePais">Mexico</h3>
+            <picture>
+                <img class="fotoPais fotomexico" src="img/mayas.png" atl="foto">
+            </picture>
+            <p class="textoPais">México es un país entre los Estados Unidos y América Central, conocido por las playas en el Pacífico y el golfo de México, y su diverso paisaje de montañas, desiertos y selvas. Las ruinas antiguas, como Teotihuacán y la ciudad maya de Chichén Itzá, se distribuyen por el país, al igual que las ciudades de la época colonial española. En la capital Ciudad de México, las elegantes tiendas, los famosos museos y los restaurantes gourmet son parte de la vida moderna</p>
+        </section>
+    </div>
+        <section class="contactoBar">
+            <h4>Contacto</h4>
+                <div class="form-Datos">
+                <form class="formBot">
+                    <fieldset>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="  Ingrese su nombre">
+                    </fieldset>
+                    <fieldset>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" placeholder="  Ingrese su email">
+                    </fieldset>
+                    <button class="botonContacto" type="submit">Enviar</button>
+                </form>
+                    <ul class="datosContacto">
+                        <li><b>Datos de la empresa</b></li>
+                        <li><b>Direccion: </b>Calle Siempre Viva 723</li>
+                        <li><b>Email: </b>LatamTravel@gmail.com</li>
+                        <li><b>Telefono: </b>745-698598</li>
+                    </ul>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="navBarBot">
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+        <form class="formFooter">
+            <fieldset >
+                <label>Quiero recibir novedades</label>
+                <input type="textarea"><button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </footer>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
