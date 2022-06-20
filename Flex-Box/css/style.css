@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    display:flex;
+    height: 120px;
+    background-color: #222222;
+    justify-content: space-between;
+}
+
+.logo {
+    height:80px;
+    margin: 20px 0px 20px 20px;
+}
+
+.navTop{
+    display:flex;
+    align-items: center;
+}
+
+.navBarTop {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    margin-right: 20px;
+} 
+
+.navBarTop li {
+    margin: 5px;
+    font-size: 19px
+}
+
+a { 
+    text-decoration: none;   
+    font-style: none;
+    color: #ffffff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+    background-color: #E5E5E5;
+}
+
+main {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 35px 20px;
+}
+
+.boxOne, .boxTwo {
+    height:350px;
+    width: 490px;
+    border-radius: 5px;
+    min-width: 491px;
+    min-height: 350px;
+    margin: 10px 2.5px    
+}
+
+h2 {
+    display: flex;
+    color: #FC200C;
+    font-size: 24px;
+    margin: 20px 0 0 20px;
+    font-weight: bold;
+}
+
+.comprando {
+    color: #ffffff;
+    margin: 0px 4px;
+    font-size: 24px;
+}
+
+.boxOne {
+    background-image: url(../img/pizzaGuy.png);
+    display: flex;
+}
+
+.boxTwo{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: #ffffff;
+}
+
+.boxTwo h2 {
+    justify-content:center;    
+    margin-top: 26px;
+}
+
+h3 {
+    font-size:20px;
+    margin-bottom: 20px;
+}
+
+.textPizza {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 55px 60px 51px
+}
+
+.tiposPizza {
+    font-weight: bold;
+}
+
+.tiposPizza li {
+    margin: 7px 0
+}
+
+footer {
+    display:flex;
+    background-color: #222222;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: auto;
+}
+
+.navBarBot {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    margin-left: 15px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.logoBot {
+    height:80px;
+    margin: 35px 42px 35px 0px
+}

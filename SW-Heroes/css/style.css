@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    position: relative;
+    padding-bottom: 6.9em;
+}
+
+header {
+    position:sticky;
+    z-index: 10;
+    top: 0px;
+    width: 100%
+}
+
+.bannerText {
+    height: 38px;
+    font-size: 15px;
+    color: black;
+    background-color: #1CD1B0;
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.titulo {
+    color: black;
+    font-size: 40px;
+    background-color: #00669F;
+    height: 101px;
+    padding-left: 28px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: static;
+    top: 25px;    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
+
+section {
+    max-width: 300px;
+    max-height: 735px;
+    margin: 50px 0px 20px;
+    background-color: #F3F3F3;
+    border-radius: 25px 25px 5px 5px;
+    box-shadow:  0px 5px 5px  rgba(105, 101, 101, 0.2);
+}
+
+section i {
+    color: red;
+    position: relative;
+    bottom: 280px;
+    left: -110px;
+    font-size: 25px;
+}
+
+.banner img {
+    width: 100%;
+    height: 193px;
+    object-fit: cover; 
+    border-radius: 25px 25px 0 0px;
+}
+
+.DS {
+    position: relative;
+    bottom: 280px;
+    left: -110px;
+    width: 25px;
+    border-radius:100%
+}
+
+#coraPalpa {
+    position: relative;
+    bottom: 285px;
+    left: -235px;
+    font-size: 25px;
+    width: 25px;
+    border-radius:100%
+}
+
+.hereo {
+    width: 122px;
+    height: 122px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1.5px solid gray;
+    position:relative;
+    bottom: 75px;
+    left: 90px;
+    z-index: 3;
+    transition: all 0s;
+    box-shadow:  5px 5px 5px  rgba(29, 29, 29, 0.2);
+}
+
+.darthS {
+    width: 122px;
+    height: 122px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1.5px solid gray;
+    position: relative;
+    top: -75px;
+    right: 35px;
+    z-index: 2;
+}
+
+.palpaT {
+    transition: all 0s;
+}
+
+.palpaT:hover {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fotopalpatine:hover {
+    z-index: -1;
+}
+
+.tituloytexto {
+    position: relative;
+    top: -60px
+}
+
+h2 {
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.descripcionHeroes {
+    text-align: justify;
+    display: flex;
+    position: relative;
+    padding: 15px;
+    height: 336px
+}
+
+button {
+    height: 48.5px;
+    width: 128.8px;
+    background-color: #00669F;
+    font-size: 15px;
+    color: #f3f3f3;
+    border: none;
+    box-shadow:  5px 5px 5px  rgba(29, 29, 29, 0.2);;
+    transition: all 0.2s;
+    position: relative;
+    bottom: 25px;
+    left: 85.5px;
+}
+
+button:hover {
+    background-color: #007bc2;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+}
+
+.derechosFooter {
+    height: 51px;
+    font-size: 16px;
+    background-color: #00669F;
+    color: white;
+    align-items: center;
+    display: flex;
+    padding: 16px 0 16px 16px;
+}
+
+@media (min-width:460px) {
+    section {
+        margin: 50px 30px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .titulo {
+        justify-content: flex-start
+    }
+
+    section {
+        margin: 50px 40px
+    }
+}
+
+@media (min-width: 1200px) {
+    section {
+        margin: 50px 50px;
+    }
+}
