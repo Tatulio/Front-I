@@ -1,0 +1,17 @@
+header {
+    height: 250px;
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    .fotoCV {
+        width: 180px;
+        height:180px;
+        display:flex;
+        border-radius: 100%;
+        border: 2px solid gray;
+        object-fit: cover;
+        margin-top: 65px;
+    }
+}
+

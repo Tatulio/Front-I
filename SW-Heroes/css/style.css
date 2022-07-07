@@ -10,11 +10,61 @@ body {
     padding-bottom: 6.9em;
 }
 
+
 header {
     position:sticky;
     z-index: 10;
     top: 0px;
     width: 100%
+}
+
+.logo {
+    height:80px;
+    display:flex;
+}
+
+.navBar {
+    height:40px;
+    background-color: #001D2D;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navBar ul {
+    display: flex;
+}
+
+.navBar li {
+    list-style: none;
+    margin-right: 20px;    
+}
+
+.navBar a {
+    text-decoration: none;
+    color:#FFFFFF
+}
+
+.midbuttonplus {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    background-color: #00669F;
+    position: absolute;
+    position: fixed;
+    right: 15px;
+    top: 50vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.midbuttonplus a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 .bannerText {
@@ -97,7 +147,7 @@ section i {
     bottom: 75px;
     left: 90px;
     z-index: 3;
-    transition: all 0s;
+    transition: all 0s ease;
     box-shadow:  5px 5px 5px  rgba(29, 29, 29, 0.2);
 }
 
@@ -114,7 +164,7 @@ section i {
 }
 
 .palpaT {
-    transition: all 0s;
+    transition: all 0s ease;
 }
 
 .palpaT:hover {
@@ -153,7 +203,7 @@ button {
     color: #f3f3f3;
     border: none;
     box-shadow:  5px 5px 5px  rgba(29, 29, 29, 0.2);;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
     position: relative;
     bottom: 25px;
     left: 85.5px;
@@ -167,6 +217,7 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0%;
+    text-align: center;
 }
 
 .derechosFooter {
@@ -177,6 +228,7 @@ footer {
     align-items: center;
     display: flex;
     padding: 16px 0 16px 16px;
+    justify-content: center;
 }
 
 @media (min-width:460px) {

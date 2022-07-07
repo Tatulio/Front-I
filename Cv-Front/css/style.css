@@ -1,11 +1,11 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;    
     font-family: 'Times New Roman', Times, serif;
-}
+} */
 
-header {
+/* header {
     height: 250px;
     background-image: url('../img/banner.jpg');
     background-size: cover;
@@ -13,7 +13,17 @@ header {
     justify-content: center;
 }
 
-body {
+.fotoCV {
+    width: 180px;
+    height:180px;
+    display:flex;
+    border-radius: 100%;
+    border: 2px solid gray;
+    object-fit: cover;
+    margin-top: 65px;
+} */
+
+/* body {
     width: 70%;
     margin: auto;
     background-color: rgb(15, 15, 15)    
@@ -27,15 +37,6 @@ main {
 a {
     text-decoration: none;
     color: #AD9863;
-}
-.fotoCV {
-    width: 180px;
-    height:180px;
-    display:flex;
-    border-radius: 100%;
-    border: 2px solid gray;
-    object-fit: cover;
-    margin-top: 65px;
 }
 
 h1, h2 {    
@@ -85,8 +86,8 @@ section, .datosPersonales {
 .datosPersonales ul {
     list-style: none;
     margin-left: 5px;
-}
-
+} */
+/* 
 footer {
     position: absolute;
     bottom: 0%;
@@ -111,4 +112,4 @@ footer {
 .icons {
     margin-left:25px;
     font-size: 20px;
-}
+} */

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Heroe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="https://kit.fontawesome.com/3c32b2c8d4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>         
+        <p class="bannerText" >Descuentos en Destructores Estelares 20%</p>
+        <h1 class="titulo">
+            <a href="index.html"><img class="logo" src="img/logo.png"></a>Primer Imperio Galactico Store 
+        </h1>
+        <nav class="navBar">
+            <ul>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Registrarme</a></li>
+                <li><a href="">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Añadi tu super!</h1>
+        <h2>Agrega tu personaje favorito completando las opciones</h2>
+        <form class="formulario" method="post" action="">
+            <label for="nombre">*Nombre
+                <input type="text" name="nombre" id="nombre" required placeholder="Nombre completo" class="datos-escritos">
+            </label>
+            <label for="especie">*Especie
+                <input type="number" name="especie" id="especie" required placeholder="Especie" class="datos-escritos">
+            </label>
+            <label for="fecha">Fecha
+                <input type="date" name="fecha" id="fecha" required class="datos-escritos">
+            </label>
+            <label for="archivo">
+                <input type="file" name="archivo" id="archivo" required>
+            </label>
+            <label class="descripcion" for="descripcion">Descripcion
+                <textarea type="textarea" name="descripcion" id="descripcion" required placeholder="Descripcion del Heroe" rows="10" ></textarea>
+            </label>
+            <div>
+            <fieldset class="checkbox">
+                <legend>Habilidades</legend>
+                    <label for="habilidad"> <input type="checkbox" id="habilidad1" name="habilidad" value="Politico">
+                    Politico</label>
+                    <label for="habilidad"> <input type="checkbox" id="habilidad2" name="habilidad" value="Militar">
+                    Militar</label>
+                    <label for="habilidad"> <input type="checkbox" id="habilidad3" name="habilidad" value="Fuerza">
+                    Fuerza</label>
+                    <label for="habilidad"> <input type="checkbox" id="habilidad4" name="habilidad" value="Combate">
+                    Combate</label>
+            </fieldset>
+            <fieldset class="radio">
+                <legend>Tipo de personaje</legend>
+                    <label for=""> <input type="radio" id="imperio" name="bando" value="imperio">
+                    Heroe del Imperio</label>
+                    <label for="rebelde"> <input type="radio" id="rebelde" name="bando" value="rebelde">
+                    Escoria Rebelde</label>
+            </fieldset>
+            </div>
+            <button class="from-button" type="submit">Añadir</button>
+        </form>
+    </main>
+    <footer>
+        <h3 class="derechosFooter">Todos los derechos reservador a FRONT END 1</h3>
+    </footer>
+</body>
+</html>
