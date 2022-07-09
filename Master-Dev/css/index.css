@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+:root {
+  --color-button: #03faee;
+  --color-header: #f8f8f8;
+  --color-boxes: #8b8b8b;
+  --color-shadow: #92f7f2;
+}
+
+@-webkit-keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes sombras {
+  0% {
+    box-shadow: var(--color-button) -5px 0px 0px;
+  }
+  50% {
+    box-shadow: var(--color-button) 7px 0px 0px;
+  }
+  100% {
+    box-shadow: var(--color-button) -5px 0px 0px;
+  }
+}
+@keyframes sombras {
+  0% {
+    box-shadow: var(--color-button) -5px 0px 0px;
+  }
+  50% {
+    box-shadow: var(--color-button) 7px 0px 0px;
+  }
+  100% {
+    box-shadow: var(--color-button) -5px 0px 0px;
+  }
+}
+.algo {
+  width: 110px;
+  height: 50px;
+  color: var(--color-boxes);
+  background-color: var(--color-shadow);
+  border: 0.2px solid black;
+  border-radius: 5px;
+}
+.algo:hover {
+  -webkit-animation: movimiento 0.5s linear;
+          animation: movimiento 0.5s linear;
+  background-color: var(--color-button);
+  color: black;
+}
+
+.number-boxes {
+  background-color: var(--color-header);
+  width: 30%;
+  max-width: 350px;
+  min-width: 349px;
+  padding: 20px 25px 50px;
+  margin: 30px 30px;
+  border-radius: 10px;
+}
+.number-boxes .number {
+  font-size: 1.1rem;
+  border: 0.5px solid black;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  height: 50px;
+  width: 50px;
+  box-shadow: var(--color-button) -5px 0px 0px;
+  margin-bottom: 15px;
+}
+.number-boxes .number:hover {
+  -webkit-animation: sombras 1s linear;
+          animation: sombras 1s linear;
+}
+.number-boxes h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.number-boxes h2::first-letter {
+  box-shadow: var(--color-button) 0px 15px 0px 0px inset;
+  font-size: 1.6rem;
+}
+.number-boxes .text-box {
+  line-height: 25px;
+}
+.number-boxes:hover {
+  -webkit-animation: movimiento 0.5s linear;
+          animation: movimiento 0.5s linear;
+  box-shadow: var(--color-boxes) 5px 5px 5px;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: var(--color-header);
+  position: fixed;
+  top: 0;
+}
+header h1 a {
+  color: black;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+header nav ul li a:hover {
+  color: var(--color-button);
+}
+
+main {
+  margin: 120px 5% 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .box-1 {
+  display: flex;
+  width: 100%;
+}
+main .box-1 section {
+  width: 50%;
+}
+main .box-1 section .paragraph-title p {
+  font-size: 4rem;
+  font-weight: bold;
+}
+main .box-1 section .text {
+  width: 85%;
+  line-height: 35px;
+  margin: 15px 0;
+}
+main .box-1 section .buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+main .box-1 .image {
+  width: 50%;
+}
+main .box-1 .image img {
+  width: 100%;
+}
+main .box-of-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5% 0;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+  background-color: var(--color-boxes);
+}
+footer p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+footer section a i {
+  color: var(--color-shadow);
+  font-size: 1.5rem;
+  margin: 0 15px;
+}
+footer section a i:hover {
+  color: var(--color-button);
+  -webkit-animation: movimiento 0.5s linear;
+          animation: movimiento 0.5s linear;
+}/*# sourceMappingURL=index.css.map */

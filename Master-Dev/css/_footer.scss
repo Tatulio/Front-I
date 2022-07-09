@@ -1,0 +1,24 @@
+@use "_bassic.scss";
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding:15px 5% 0;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-color: var(--color-boxes);
+    p {
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+    section a i {
+        color: var(--color-shadow);
+        font-size: 1.5rem;
+        margin: 0 15px;
+        &:hover{
+            color: var(--color-button);
+            animation: movimiento 0.5s linear;
+        }
+    }
+}
