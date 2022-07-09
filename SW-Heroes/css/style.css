@@ -60,11 +60,36 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     color: #ffffff;
+    transition: all 1s ease-in-out;
 }
 
 .midbuttonplus a {
     text-decoration: none;
     color: #ffffff;
+    transition: all 1s ease-in-out;
+}
+
+.midbuttonplus:hover {
+    background-color: #033f61;
+    animation: rotate  2s ease 
+}
+
+.midbuttonplus a:hover {
+    color: #1CD1B0;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    
+    50% {
+        transform: rotate(180deg)
+    }
+    
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 .bannerText {
@@ -125,7 +150,14 @@ section i {
     bottom: 280px;
     left: -110px;
     width: 25px;
-    border-radius:100%
+    border-radius:100%;
+}
+.DS:hover {
+    animation: rotate  2s ease 
+}
+
+#coraPalpa:hover {
+    animation: rotate  2s ease 
 }
 
 #coraPalpa {
@@ -147,7 +179,7 @@ section i {
     bottom: 75px;
     left: 90px;
     z-index: 3;
-    transition: all 0s ease;
+    transition: all 10s ;
     box-shadow:  5px 5px 5px  rgba(29, 29, 29, 0.2);
 }
 
@@ -217,13 +249,13 @@ footer {
     position: absolute;
     width: 100%;
     bottom: 0%;
-    text-align: center;
+    text-align: center;    
+    background-color: #00669F;
 }
 
 .derechosFooter {
     height: 51px;
     font-size: 16px;
-    background-color: #00669F;
     color: white;
     align-items: center;
     display: flex;

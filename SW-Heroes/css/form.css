@@ -13,6 +13,21 @@ main {
     margin-bottom: 50px;
     padding: 0px 40px;
     height: 70vh;
+    border-radius: 5px;
+}
+
+.title-sub {
+    text-align: center;
+}
+
+h2 {
+    margin: 30px 0 20px;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 form {
@@ -22,15 +37,34 @@ form {
 }
 
 .datos-escritos {
-    height:63px;
+    height:45px;
     border-radius: 15px;
+    margin: 10px 5px;
+    padding-left: 10px;
     border: 1.5px solid rgba(0,0,0,0.1)
 }
 
 .formulario label {
     width: 50%;
     display: flex;
-    flex-direction:column
+    flex-direction:column;
+}
+
+.label-file {
+    margin:auto;
+    padding-left: 10px;
+}
+
+.descripcion textarea {
+    margin: 5px 10px 20px 5px;
+    border-radius: 5px;
+    padding: 5px
+}
+
+.checkbox {
+    border: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
 }
 
 .checkbox, .radio {
@@ -38,17 +72,31 @@ form {
 }
 
 .checkbox label {
-    display:block
+    display:block;
+    margin: 5px 15px;
+}
+
+.radio {
+    border: none;
+    margin-left: 5px;
+    margin-top: 10px;
 }
 
 .radio label {    
-    display:block
+    display:block;
+    margin: 5px 15px;
 }
 
 .from-button {
     width: 80%;
+    background-color: #1CD1B0;
+    margin: 30px 0 50px;
+    border-radius: 5px;
 }
 
+footer {
+    margin: 0
+}
 
 @media (min-width:460px) {
     
