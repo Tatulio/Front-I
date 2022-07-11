@@ -1,0 +1,89 @@
+footer {
+    .suscripcion { 
+        display: flex;   
+        background-color: #f0a83e;
+        justify-content: center;
+        min-height: 60px;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding-left: 0px;
+        h5 {
+            font-size: 20px;
+            color: #ffffff;
+            padding-right: 25px;
+            i {
+                margin: 20px 5px 20px 25px;
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .formSus {
+            display: flex;
+            button {
+                margin: 13px 15px 13px 5px;
+                height: 34px;
+                width: 76px;
+                background-color: #3C2313;   
+                color: #ffffff;
+                border-radius: 15px;
+                font-size: 12px;
+                transition: all 0.2;
+                &:hover {
+                    background-color: #66391d;
+                }
+            }
+            .mailSus  {
+                border: none; 
+                input {
+                    border:none;
+                    border-radius: 5px;
+                    width: 271px;
+                    height: 40px;
+                    margin: 10px;
+                    padding-left: 5px;
+                }    
+            }
+        }
+    }
+    .datosFotter {
+        background-color: #3C2313;
+        justify-content: space-evenly;
+        padding: 20px 70px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        picture {
+            margin: auto 0px;
+        }
+        .navBarFooter {
+            .contacto {
+                display: flex;
+                margin: 15px 0;
+                div {
+                    margin-left: 15px;
+                    padding-top: 5px;
+                    h4 {
+                        color: white;
+                        font-size: 20px;
+                    }
+                    p {
+                        color: #8A8787;
+                        font-size: 10px;
+                    }
+                }
+                .iconFooter {
+                    width: 68px;
+                }
+            }
+        }
+    }
+    .terminosycondiciones {
+        padding: 10px 0 15px;
+        display: flex;
+        justify-content: center;
+        background-color: #222222;
+        font-size: 14px;
+        font-weight: bold;
+        color: #ffffff
+    }
+}
